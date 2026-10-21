@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main> 
+        <form action="form.html" method="get">
+            <label for="name"> Names: </label>
+            <input 
+            type="text"
+            placeholder="Name"
+            name="name"
+            id="name"
+            tabindex="1"
+            />
+
+            <label for="password">password</label>
+            <input 
+            type="password"
+            placeholder="*************"
+            id="password"
+            minlength="6"
+            maxlength="15"
+                      
+            />
+
+            <label for="email">Email</label>
+            <input 
+            type="email"
+            placeholder="example@gmail.com"
+            id="email"
+            minlength="8"
+            />
+
+            <label for="date"> Date : </label>
+            <input 
+            type="datetime-local"
+            name="date"
+            id="date"
+            required
+            />
+
+            <label for="file"> File: </label>
+            <input type="file"
+            name="file"
+            id="file"
+            accept="/pdf"
+            size="20mb"
+            />
+
+            <label for="num"> Num:</label>
+            <input type="number" placeholder="number" id="number"/>
+
+            <label for="search"> Search: </label>
+            <input type="search" name="search" id="search"/>
+
+
+            <select name="select" id="select" required>
+                <option value=""disabled selected> select --</option>
+                <option value="Garri"> Garri </option>
+                <option value="Beans"> Beans</option>
+                <option value="Yam"> Yam</option>
+                <option value="soup"> Soup</option>
+
+            </select>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="male"> Male </label>
+                <input type="radio" id="female" name="Gender"/>
+                <label for="female"> Female </label>
+                <input type="radio" name="Gender" id="Female"/>
+
+                <label for="others"> others</label>
+                <input type="radio" name="Gender" id="others" />
+            </fieldset>
+
+            <fieldset>
+                <legend> Options </legend>
+                <label for="Garri">Garri</label>
+                <input type="checkbox" name="Garri" id="Garri">
+                <label for="Beans">Beans</label>
+                <input type="checkbox" name="Beans" id="Beans">
+                <label for="soup">Soup</label>
+                <input type="checkbox" name="Soup" id="Soup">
+                <label for="Rice">Rice</label>
+                <input type="checkbox" name="Rice" id="Rice">
+            </fieldset>
+            
+            <label for="browser">Choose your browser fron the list:</label>
+            <input type="browser" name="browser" id="browser"/>
+
+            <details id="browsers">
+                <option value="Edge"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+                
+            </details>
+            
+           <label for="msg"> Message </label>
+           <textarea name="msg" id="msg" placeholder="write to us"></textarea>
+
+           <div>
+            <details>
+                <summary> How is the program</summary>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi atque quia architecto ducimus numquam! Harum praesentium magni odit quis maiores.
+                </p>
+
+            </details>
+           </div>
+        </form>
+
+    </main>
+</body>
+</html>
